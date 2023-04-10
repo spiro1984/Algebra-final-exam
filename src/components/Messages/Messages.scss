@@ -1,0 +1,57 @@
+.Messages-List {
+    padding: 20px 0;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 0;
+    flex-grow: 1;
+    overflow: auto;
+  }
+
+  .Messages-Message {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .Messages-Message.Current-Member {
+    flex-direction: row-reverse;
+    text-align: right;
+ 
+
+  }
+  
+  .Message-Content {
+    display: inline-block;
+    
+  }
+  
+  .Current-Member > .Message-Content {
+    align-items: flex-end;
+    
+
+  }
+  
+  
+  .Message-Content > .Username {
+    display: block;
+    color: gray;
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+  
+  .Message-Content > .Text {
+    padding: 10px;
+    max-width: 400px;
+    margin: 0;
+    border-radius: 12px;
+    background-color: orangered;
+    color: white;
+    display: inline-block;
+  
+  }
+  
+  .Current-Member > .Message-Content .Text {
+    background-color: blueviolet;
+  }
+  
